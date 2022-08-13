@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-v24/ic_button.xml" value="0.2155" />
+        <entry key="app/src/main/res/drawable-v24/ic_follow_after_background.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-v24/ic_greeting3_word.xml" value="0.2155" />
+        <entry key="app/src/main/res/drawable-v24/ic_login_else_word.xml" value="0.2155" />
+        <entry key="app/src/main/res/drawable-v24/ic_logo.xml" value="0.2155" />
+        <entry key="app/src/main/res/drawable-v24/ic_logo_boundary.xml" value="0.2155" />
+        <entry key="app/src/main/res/drawable-v24/ic_sub_greeting2_word.xml" value="0.2155" />
+        <entry key="app/src/main/res/drawable-v24/ic_sub_logo.xml" value="0.2155" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.17740069403164627" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.15307971014492755" />
+        <entry key="app/src/main/res/layout/activity_signup.xml" value="0.27528887762539633" />
+        <entry key="app/src/main/res/layout/activity_user_info.xml" value="0.15307971014492755" />
+        <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.34795989990234377" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.22073870672695878" />
+        <entry key="app/src/main/res/layout/fragment_map.xml" value="0.15307971014492755" />
+        <entry key="app/src/main/res/layout/fragment_search.xml" value="0.3942352294921875" />
+        <entry key="app/src/main/res/layout/fragment_search_confirm.xml" value="0.15307971014492755" />
+        <entry key="app/src/main/res/layout/fragment_user_search.xml" value="0.2510518170785213" />
+        <entry key="app/src/main/res/layout/item_mapsearch.xml" value="0.2520253278207088" />
+        <entry key="app/src/main/res/layout/item_pinter.xml" value="0.11236010565274002" />
+        <entry key="app/src/main/res/layout/item_place.xml" value="0.15307971014492755" />
+        <entry key="app/src/main/res/layout/item_usersearch.xml" value="0.5451612903225806" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

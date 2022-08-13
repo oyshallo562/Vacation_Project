@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchFragment">
+
+    <ImageView
+        android:id="@+id/searchWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_search_word"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        />
+
+
+
+    <ImageView
+        android:id="@+id/searchBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_search_background"
+        app:layout_constraintTop_toBottomOf="@id/searchWord"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="19dp"
+        />
+
+    <ImageButton
+        android:id="@+id/Search_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_search_logo"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toTopOf="@id/searchBackground"
+        app:layout_constraintStart_toStartOf="@id/searchBackground"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <ImageButton
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_search_cancel"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toTopOf="@id/searchBackground"
+        app:layout_constraintEnd_toEndOf="@id/searchBackground"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="20dp"
+        />
+    <EditText
+        android:id="@+id/Search_Edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/Search_Button"
+        app:layout_constraintTop_toTopOf="@id/searchBackground"
+        android:hint="대충 있는 글자"
+        android:textSize="16sp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="13dp"
+        android:background="@null"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:scrollbars="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        />
+
+    <TextView
+        android:id="@+id/empty_result_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="검색 결과가 없습니다."
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/Search_Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+    />
+
+    <ProgressBar
+        android:id="@+id/progress_circular"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Search_Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

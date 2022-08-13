@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserInfoActivity">
+
+    <ImageView
+        android:id="@+id/greeting3Word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_greeting3_word"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/subGreeting3word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_sub_greeting3_word"
+        app:layout_constraintTop_toBottomOf="@id/greeting3Word"
+        app:layout_constraintStart_toStartOf="@id/greeting3Word"
+        android:layout_marginTop="15dp"
+        />
+
+    <ImageView
+        android:id="@+id/buttonBackground1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_button_background1"
+        app:layout_constraintTop_toBottomOf="@id/subGreeting3word"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        />
+
+    <ImageView
+        android:id="@+id/personLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_person_logo"
+        app:layout_constraintStart_toStartOf="@id/buttonBackground1"
+        app:layout_constraintTop_toTopOf="@id/buttonBackground1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/boundaryLogo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_logo_boundary"
+        app:layout_constraintStart_toEndOf="@id/personLogo"
+        app:layout_constraintTop_toTopOf="@id/personLogo"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        />
+
+    <EditText
+        android:id="@+id/Name_Edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@color/material_on_surface_stroke"
+        android:hint="이름을 알려주세요."
+        app:layout_constraintStart_toEndOf="@id/boundaryLogo1"
+        app:layout_constraintTop_toTopOf="@id/buttonBackground1"
+        app:layout_constraintBottom_toBottomOf="@id/buttonBackground1"
+        android:layout_marginStart="10dp"
+        android:textSize="16sp"
+        />
+
+    <ImageView
+        android:id="@+id/buttonBackground2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_button_background2"
+        app:layout_constraintTop_toBottomOf="@id/buttonBackground1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="5dp"
+        />
+
+    <ImageView
+        android:id="@+id/personLogo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_person_logo"
+        app:layout_constraintStart_toStartOf="@id/buttonBackground2"
+        app:layout_constraintTop_toTopOf="@id/buttonBackground2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="17dp"
+        />
+
+    <ImageView
+        android:id="@+id/boundaryLogo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_logo_boundary"
+        app:layout_constraintStart_toEndOf="@id/personLogo2"
+        app:layout_constraintStart_toStartOf="@id/boundaryLogo1"
+        app:layout_constraintTop_toTopOf="@id/personLogo2"
+        android:layout_marginTop="5dp"
+        />
+
+    <EditText
+        android:id="@+id/UserName_Edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="사용할 닉네임을 정해주세요."
+        app:layout_constraintStart_toEndOf="@id/boundaryLogo2"
+        app:layout_constraintTop_toTopOf="@id/buttonBackground2"
+        app:layout_constraintBottom_toBottomOf="@id/buttonBackground2"
+        android:padding="15dp"
+        android:background="@color/material_on_surface_stroke"
+        android:layout_marginStart="10dp"
+        android:textSize="16sp"
+        />
+
+    <ImageView
+        android:id="@+id/buttonBackground3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_button_background2"
+        app:layout_constraintTop_toBottomOf="@id/buttonBackground2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="5dp"
+        />
+
+    <ImageView
+        android:id="@+id/personLogo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_person_logo"
+        app:layout_constraintStart_toStartOf="@id/buttonBackground3"
+        app:layout_constraintTop_toTopOf="@id/buttonBackground3"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="17dp"
+        />
+
+    <ImageView
+        android:id="@+id/boundaryLogo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_logo_boundary"
+        app:layout_constraintStart_toEndOf="@id/personLogo3"
+        app:layout_constraintStart_toStartOf="@id/boundaryLogo1"
+        app:layout_constraintTop_toTopOf="@id/personLogo3"
+        android:layout_marginTop="5dp"
+        />
+
+    <EditText
+        android:id="@+id/UserInfo_Edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="소개를 적어주세요."
+        android:padding="15dp"
+        android:background="@color/material_on_surface_stroke"
+        app:layout_constraintStart_toEndOf="@id/boundaryLogo2"
+        app:layout_constraintTop_toTopOf="@id/buttonBackground3"
+        app:layout_constraintBottom_toBottomOf="@id/buttonBackground3"
+        android:layout_marginStart="10dp"
+        android:textSize="16sp"
+        />
+
+    <ImageButton
+        android:id="@+id/UserInfo_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_button"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toBottomOf="@id/buttonBackground2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="200dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="완료"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@id/UserInfo_Button"
+        app:layout_constraintBottom_toBottomOf="@id/UserInfo_Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
