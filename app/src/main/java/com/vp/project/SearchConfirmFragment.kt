@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.setFragmentResultListener
 import com.google.firebase.auth.FirebaseAuth
@@ -42,7 +43,6 @@ class SearchConfirmFragment : Fragment() {
         _binding = FragmentSearchConfirmBinding.inflate(inflater, container, false)
         val view = binding.root
 
-        // Inflate the layout for this fragment
         val button = view?.findViewById<Button>(R.id.Confirm_Button)
 
         button?.setOnClickListener {

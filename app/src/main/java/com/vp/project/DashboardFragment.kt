@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.TextView
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
@@ -90,7 +91,7 @@ class DashboardFragment : Fragment() {
             }
         }
 
-        val button = v.findViewById<Button>(R.id.UserSearch_Button)
+        val button = v.findViewById<ImageButton>(R.id.UserSearch_Button)
         button.setOnClickListener {
             firestore!!.collection("Users").whereNotEqualTo("name",name)
                 .get()      // 문서 가져오기
