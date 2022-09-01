@@ -130,16 +130,15 @@
         android:layout_marginTop="20dp"
         />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/UserSearch_Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_search_background"
+        android:layout_width="380dp"
+        android:layout_height="47dp"
         android:layout_marginTop="20dp"
-        app:layout_constraintTop_toBottomOf="@id/userSearchWord"
-        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_search_background"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/userSearchWord" />
 
     <ImageButton
         android:id="@+id/UserSearch_Icon"

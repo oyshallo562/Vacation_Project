@@ -99,6 +99,7 @@ class UserSearchFragment : Fragment() {
                     }
                 } else {
                     with(followDto) {
+                        //var userinfo :firebase = arrayOf(database)
                         if (followers.containsKey(currentUid!!)) {
                             // 언팔로우
                             followers.remove(currentUid!!)

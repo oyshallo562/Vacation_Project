@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
@@ -26,7 +27,7 @@ class UserInfoActivity : AppCompatActivity() {
         val NameEdittext = findViewById<EditText>(R.id.Name_Edittext)
         var UserInfoUploadDTO = UserInfoUploadEntity()
         var UserCountDTO = UserCountEntity()
-        val button = findViewById<Button>(R.id.UserInfo_Button)
+        val button = findViewById<ImageButton>(R.id.UserInfo_Button)
         auth = Firebase.auth
         firestore = Firebase.firestore
 

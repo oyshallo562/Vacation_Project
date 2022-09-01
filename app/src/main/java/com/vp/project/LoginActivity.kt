@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.Toast
 import com.google.android.gms.auth.api.Auth
 import com.google.android.gms.auth.api.signin.GoogleSignIn
@@ -28,13 +29,13 @@ class LoginActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
 
         // 회원가입 창으로
-        val signupButton = findViewById<Button>(R.id.GotoSignupButton)
+        val signupButton = findViewById<ImageButton>(R.id.GotoSignupButton)
         signupButton.setOnClickListener {
             startActivity(Intent(this,SignupActivity::class.java))
         }
 
         // 로그인 버튼
-        val loginButton = findViewById<Button>(R.id.LoginButton)
+        val loginButton = findViewById<ImageButton>(R.id.LoginButton)
         loginButton.setOnClickListener {
             val idEditText = findViewById<EditText>(R.id.ID)
             val passwordEditText = findViewById<EditText>(R.id.PW)
@@ -42,7 +43,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
         // 구글 로그인 버튼
-        val googleButton = findViewById<Button>(R.id.GoogleLoginButton)
+        val googleButton = findViewById<ImageButton>(R.id.GoogleLoginButton)
         googleButton.setOnClickListener { googleLogin() }
         val default_web_client_id :String = "481189433167-9j4l1h12ef108cv7te7ds1qujmot5bvm.apps.googleusercontent.com"
 

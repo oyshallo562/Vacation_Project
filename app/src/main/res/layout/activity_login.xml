@@ -56,7 +56,7 @@
         app:layout_constraintStart_toEndOf="@id/boundaryLogo1"
         app:layout_constraintTop_toTopOf="@id/buttonBackground1"
         app:layout_constraintBottom_toBottomOf="@id/buttonBackground1"
-        android:background="@color/material_on_surface_stroke"
+        android:background="#f4f4f4"
         android:layout_marginStart="10dp"
         android:textSize="16sp"
         />
@@ -99,13 +99,14 @@
     <EditText
         android:id="@+id/PW"
         android:padding="15dp"
+        android:inputType="textPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="비밀번호를 입력하세요."
         app:layout_constraintStart_toEndOf="@id/boundaryLogo2"
         app:layout_constraintTop_toTopOf="@id/buttonBackground2"
         app:layout_constraintBottom_toBottomOf="@id/buttonBackground2"
-        android:background="@color/material_on_surface_stroke"
+        android:background="#f4f4f4"
         android:layout_marginStart="10dp"
         android:textSize="16sp"
         />
