@@ -13,7 +13,6 @@ object RetrofitUtil {
     val apiService: ApiService by lazy { getRetrofit().create(ApiService::class.java) }
 
     private fun getRetrofit(): Retrofit {
-
         return Retrofit.Builder()
             .baseUrl(Url.TMAP_URL)
             .addConverterFactory(GsonConverterFactory.create()) // gson으로 파싱

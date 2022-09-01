@@ -12,7 +12,6 @@ import com.vp.project.databinding.FragmentHomeBinding
 import com.vp.project.model.CountEntity
 
 class HomeFragment : Fragment() {
-
     private var binding: FragmentHomeBinding? = null
     // This property is only valid between onCreateView and
     // onDestroyView.
