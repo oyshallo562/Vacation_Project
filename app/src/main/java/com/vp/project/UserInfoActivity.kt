@@ -22,6 +22,7 @@ class UserInfoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_user_info)
+
         val UserNameEdittext = findViewById<EditText>(R.id.UserName_Edittext)
         val UserInfoEdittext = findViewById<EditText>(R.id.UserInfo_Edittext)
         val NameEdittext = findViewById<EditText>(R.id.Name_Edittext)
@@ -30,6 +31,11 @@ class UserInfoActivity : AppCompatActivity() {
         val button = findViewById<ImageButton>(R.id.UserInfo_Button)
         auth = Firebase.auth
         firestore = Firebase.firestore
+
+        if(firestore!!.collection("Users")?.document(UserInfoUploadDTO.uid.toString()) != null) {
+            startActivity(Intent(this,MainActivity::class.java))
+            finish()
+        }
 
         button.setOnClickListener {
             UserInfoUploadDTO.uid = auth?.currentUser?.uid

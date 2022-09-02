@@ -47,12 +47,13 @@ class MapFragment : Fragment(), OnMapReadyCallback {
                     follows = document.data?.get("followings") as MutableMap<String, Boolean>
                     //follows.put(auth?.currentUser?.uid.toString(), true)
                     //follows = document.data?.get("followers") as MutableMap<String, Boolean>
-                    val tmp = follows.keys.toString()
-                    var tmpuid = tmp.substring(1 until tmp.length-1)
+                    val tmp = follows.forEach {
+                        var tmpuid = it.key
+                        //tmp.substring(1 until tmp.length-1)
+                        followPinList?.add(tmpuid)
+                    }
 
 
-                    //Toast.makeText(context, tmpuid,Toast.LENGTH_LONG).show()
-                    followPinList?.add(tmpuid)
                     followPinList?.add(auth.currentUser?.uid.toString())
                     //Log.d("for!!!!",followPinList[0].toString())
                     for(i in 0 until followPinList.size) {

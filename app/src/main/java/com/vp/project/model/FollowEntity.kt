@@ -5,5 +5,5 @@ data class FollowEntity(
     var followers : MutableMap<String, Boolean> = HashMap(),
 
     // 이 사람이 팔로잉 중인 사람들
-    var followings : MutableMap<String, Boolean> = HashMap()
+    var follows : MutableMap<String, Boolean> = HashMap()
 )

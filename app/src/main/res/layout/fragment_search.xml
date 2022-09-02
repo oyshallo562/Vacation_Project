@@ -59,7 +59,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toEndOf="@id/Search_Button"
         app:layout_constraintTop_toTopOf="@id/searchBackground"
-        android:hint="대충 있는 글자"
+        android:hint="장소명"
         android:textSize="16sp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="13dp"

@@ -93,7 +93,7 @@ class DashboardFragment : Fragment() {
 
         val button = v.findViewById<ImageButton>(R.id.UserSearch_Button)
         button.setOnClickListener {
-            firestore!!.collection("Users").whereNotEqualTo("name",name)
+            firestore!!.collection("Users").whereNotEqualTo("uid",uid)
                 .get()      // 문서 가져오기
                 .addOnSuccessListener { result ->
                     // 성공할 경우
